@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="/images/icon1.png">
+    <title>Tạp hóa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loadingSpinner" class="spinner hidden"></div>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔍 Nhập sản phẩm, danh mục, thương hiệu...">
+    </div>
+    <div id="categoryButtons" class="category-buttons"></div>
+    <div class="product-grid" id="productGrid"></div>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <b class="close" onclick="closeModal();">✖</b>
+            <div id="modalBody"></div>
+            <button id="saveBtn" onclick="updateProduct();">Lưu thay đổi</button>
+            <button id="backBtn" onclick="closeModal();">Quay lại</button>
+        </div>
+    </div>
+
+</body>
+<script src="const.js"></script>
+<script src="list.js"></script>
+<script src="detail.js"></script>
+
+</html>
