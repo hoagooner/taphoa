@@ -11,8 +11,11 @@
 
 <body>
     <div id="loadingSpinner" class="spinner hidden"></div>
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="🔍 Nhập sản phẩm, danh mục, thương hiệu...">
+    <div class="row">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 Nhập sản phẩm, danh mục, thương hiệu...">
+        </div>
+        <button onclick="openNewProductModal()" id="addProduct">Thêm</button>
     </div>
     <div id="categoryButtons" class="category-buttons"></div>
     <div class="product-grid" id="productGrid"></div>
@@ -20,11 +23,11 @@
         <div class="modal-content">
             <b class="close" onclick="closeModal();">✖</b>
             <div id="modalBody"></div>
-            <button id="saveBtn" onclick="updateProduct();">Lưu thay đổi</button>
+            <button id="saveBtn">Lưu thay đổi</button>
             <button id="backBtn" onclick="closeModal();">Quay lại</button>
         </div>
     </div>
-
+<button id="backToTop" class="back-to-top">↑</button>
 </body>
 <script src="const.js"></script>
 <script src="list.js"></script>
