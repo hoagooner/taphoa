@@ -1,75 +1,58 @@
 const modal = document.getElementById("productModal");
 const modalBody = document.getElementById("modalBody");
 const saveBtn = document.getElementById("saveBtn");
-var file = document.getElementById("saveBtn");
 var previewImageUrl = "";
 var categoryWithBrands = []
 var categories = []
 var brandsByCategory = []
 
-var selectedProdcut;
-function viewDetail(p) {
-    selectedProdcut = p;
+var selectedProdcut = EMPTY_PRODUCT;
+function viewDetail(sku) {
+    selectedProdcut = getProductBySKU(sku);
     modal.style.display = "block";
+    let isSoda = SODA.includes(selectedProdcut[CATEGORY]);
     modalBody.innerHTML = `
-  <img src="${p[IMAGE]}" id="modalImage"><br>
-  <input type="file" accept="image/*" capture="environment" id="cameraInput" onchange="previewImage();"><br>
+    <input type="hidden" id="modalSKU" value="${selectedProdcut[SKU]}">  
+    <img src="${selectedProdcut.previewImageUrl ? selectedProdcut.previewImageUrl : selectedProdcut[IMAGE]}" id="modalImage"><br>
+    <input type="file" accept="image/*" capture="environment" id="cameraInput" onchange="previewImage();"><br>
 
-  <label>Tên sản phẩm</label>
-  <input type="text" id="modalName" value="${p[NAME]}">
+    <label>Tên sản phẩm</label>
+    <input type="text" id="modalName" value="${selectedProdcut[NAME]}">
 
-  <label>Giá lẻ ${p[UNIT] ? `(${p[UNIT]})` : ''}</label>
-  <input type="number" id="modalUnitPrice" value="${p[UNIT_PRICE]}">
+    <label>Giá lẻ ${selectedProdcut[UNIT] ? `(${selectedProdcut[UNIT]})` : ''}</label>
+    <input type="number" id="modalUnitPrice" value="${selectedProdcut[UNIT_PRICE]}">
 
-  ${derivePackType(p[UNIT])
-            ? `<label>Giá ${derivePackType(p[UNIT])}</label>
-       <input type="number" id="modalPackPrice" value="${p[PACK_PRICE]}">`
+    ${isSoda
+            ? `<label>Giá lốc</label>
+        <input type="number" id="modalPackPrice" value="${selectedProdcut[PACK_PRICE]}">
+
+        <label>Giá thùng</label>
+        <input type="number" id="modalBoxPrice" value="${selectedProdcut[BOX_PRICE]}">`
             : ''}
 
-  ${deriveBoxType(p[UNIT])
-            ? `<label>Giá ${deriveBoxType(p[UNIT])}</label>
-       <input type="number" id="modalBoxPrice" value="${p[BOX_PRICE]}">`
-            : ''}
-
-  <label>Ghi chú</label>
-  <textarea id="modalDescription">${p[DESCRIPTION] || ""}</textarea>
-
-  <label>Danh mục</label>
-  <select id="modalCategory"></select></br>
-
-  <label>Thương hiệu</label>
-  <select id="modalBrand"></select>
+    <label>Ghi chú ${!isSoda ? '(giá lốc, thùng..)' : ''}</label>
+    <textarea id="modalDescription">${selectedProdcut[DESCRIPTION] || ""}</textarea>
     `;
 
-    fetchCategoryAndBrand();
+    // <label>Danh mục</label>
+    // <select id="modalCategory"></select></br>
+
+    // <label>Thương hiệu</label>
+    // <select id="modalBrand"></select>
+
+    // fetchCategoryAndBrand();
+    saveBtn.onclick = updateProduct;
 }
 
-function deriveBoxType(unit) {
-    if (unit === UNIT_KG) {
-        return UNIT_SACK;
-    } else if (CATEGORY_BY_PIECE_OR_KG.includes(selectedProdcut[CATEGORY])) {
-        return UNIT_KG;
-    } else if ([UNIT_100GRAM, UNIT_LITER, UNIT_500ML].includes(unit)) {
-        return null;
-    } else {
-        return UNIT_CARTON;
-    }
-}
-
-function derivePackType(unit) {
-    if (VOLUMN_UNIT.includes(unit)) {
-        return null;
-    } else if (CATEGORY_BY_PIECE_OR_KG.includes(selectedProdcut[CATEGORY])) {
-        return null;
-    } else {
-        return UNIT_PACK;
-    }
+function getProductBySKU(sku) {
+    return products.find(p => p[SKU] == sku);
 }
 
 function previewImage() {
     const file = document.getElementById('cameraInput').files[0];
     previewImageUrl = URL.createObjectURL(file);
     document.getElementById('modalImage').src = previewImageUrl;
+    selectedProdcut.previewImageUrl = previewImageUrl;
 }
 
 async function uploadToImgbb() {
@@ -139,10 +122,9 @@ function closeModal() {
 async function updateProduct() {
     try {
         showLoading();
-
-        var imageUrl = await uploadToImgbb(file);
+        var imageUrl = await uploadToImgbb();
         updateProductObject(imageUrl);
-        fetchUpdateProduct();
+        submitProduct("update");
         reflectProductHTML();
     } catch (error) {
         console.error('Error updating product:', error);
@@ -156,14 +138,22 @@ function updateProductObject(imageUrl) {
     if (imageUrl) {
         selectedProdcut[IMAGE] = imageUrl;
     }
+    selectedProdcut[SKU] =
+        document.getElementById("modalSKU") ? document.getElementById("modalSKU").value : "A" + Date.now().toString();
+    selectedProdcut[NAME] = document.getElementById("modalName").value;
     selectedProdcut[UNIT_PRICE] =
         document.getElementById("modalUnitPrice") ? document.getElementById("modalUnitPrice").value : "";
     selectedProdcut[PACK_PRICE] =
         document.getElementById("modalPackPrice") ? document.getElementById("modalPackPrice").value : "";
     selectedProdcut[BOX_PRICE] =
         document.getElementById("modalBoxPrice") ? document.getElementById("modalBoxPrice").value : "";
-    selectedProdcut[NAME] = document.getElementById("modalName").value;
     selectedProdcut[DESCRIPTION] = document.getElementById("modalDescription").value;
+    if (document.getElementById("modalCategory")) {
+        selectedProdcut[CATEGORY] = document.getElementById("modalCategory").value;
+    }
+    if (document.getElementById("modalBrand")) {
+        selectedProdcut[BRAND] = document.getElementById("modalCategory").value;
+    }
 }
 
 function createDataToUpdate() {
@@ -182,7 +172,7 @@ function createDataToUpdate() {
     ];
 }
 
-function fetchUpdateProduct() {
+function submitProduct(action) {
     var data = createDataToUpdate();
     fetch(PRODUCT_EXC_URL, {
         method: 'POST',
@@ -191,7 +181,7 @@ function fetchUpdateProduct() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            action: 'update',
+            action: action,
             key: data[0],
             values: data
         })
@@ -206,7 +196,7 @@ function fetchUpdateProduct() {
             console.log('Data', data);
         })
         .catch(error => {
-            console.error("cors error or network issue");
+            console.error(error);
         });
 }
 
@@ -214,7 +204,16 @@ function reflectProductHTML() {
     // Update the product in the products array
     const index = products.findIndex(prod => prod[SKU] === selectedProdcut[SKU]);
     if (index !== -1) {
-        document.getElementsByClassName('product-card')[index].innerHTML = renderProductCard(selectedProdcut);
+        let card =
+            document.querySelector(`.product-card input.product-sku[value="${selectedProdcut[SKU]}"]`)
+                ?.closest('.product-card')
+        card.innerHTML = renderProductCard(selectedProdcut);
+    } else {
+        products.push(selectedProdcut);
+        document.getElementById('productGrid').insertAdjacentHTML("afterbegin",
+            `<div class="product-card" onclick='viewDetail("${selectedProdcut[SKU]}")'>
+                ${renderProductCard(selectedProdcut)}
+            </div>`);
     }
 }
 
@@ -266,4 +265,51 @@ function renderCategoryAndBrand(p) {
     //         ? brands.map(b => `<option value="${b}" ${b === selectedBrand ? 'selected' : ''}>${b}</option>`).join("")
     //         : `<option value="">(Không có thương hiệu)</option>`;
     // }
+}
+
+async function addProduct() {
+    try {
+        showLoading();
+        var imageUrl = await uploadToImgbb();
+        updateProductObject(imageUrl);
+        submitProduct("append");
+        reflectProductHTML();
+    } catch (error) {
+        console.error('Error updating product:', error);
+    } finally {
+        hideLoading();
+    }
+    closeModal();
+}
+
+function openNewProductModal() {
+    selectedProdcut = { ...EMPTY_PRODUCT };
+    modal.style.display = "block";
+    modalBody.innerHTML = generateDetailHTML();
+    saveBtn.onclick = addProduct;
+}
+
+function generateDetailHTML() {
+    return `
+        <img src="" id="modalImage"><br>
+        <input type="file" accept="image/*" capture="environment" id="cameraInput" onchange="previewImage();"><br>
+
+        <label>Tên sản phẩm</label>
+        <input type="text" id="modalName" value="">
+
+        <label>Giá lẻ </label>
+        <input type="number" id="modalUnitPrice" value="">
+
+        <label>Ghi chú</label>
+        <textarea id="modalDescription"></textarea>`;
+    //     <div class="form-row">
+    // <div class="form-group">
+    //     <label>Giá lốc</label>
+    //     <input type="number" id="modalPackPrice" value="">
+    // </div>
+    // <div class="form-group">
+    //     <label>Giá thùng</label>
+    //     <input type="number" id="modalBoxPrice" value="">
+    // </div>
+    // </div>
 }

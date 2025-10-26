@@ -22,7 +22,7 @@ function handleFetchData(text) {
   const cols = data.table.cols.map(c => c.label);
   const rows = data.table.rows.map(r => r.c.map(cell => (cell ? cell.v : null)));
 
-  products = rows.map(row => {
+  return rows.map(row => {
     const obj = {};
     row.forEach((val, i) => {
       obj[cols[i]] = val;
@@ -32,8 +32,6 @@ function handleFetchData(text) {
     }
     return obj;
   });
-
-  return products;
 }
 
 function getTopCategories(products) {
@@ -52,12 +50,11 @@ function getTopCategories(products) {
 function renderProducts(products) {
   const grid = document.getElementById('productGrid');
   grid.innerHTML = "";
-  // products = groupAndSortByCategory(products);
-  groupAndSortByCategory(products);
-  grid.innerHTML = products.map(p => {
+  // groupAndSortByCategory(products);
+  grid.innerHTML = products.map((p, i) => {
     if (p[SKU]) {
       return `
-      <div class="product-card">
+      <div class="product-card" onclick='viewDetail("${p[SKU]}")'>
         ${renderProductCard(p)}
       </div>`
     }
@@ -65,11 +62,11 @@ function renderProducts(products) {
   ).join('');
 
   // Add event listeners for product cards
-  document.querySelectorAll('.product-card').forEach((card, index) => {
-    card.addEventListener('click', () => {
-      viewDetail(products[index]);
-    });
-  });
+  // document.querySelectorAll('.product-card').forEach((card, index) => {
+  //   card.addEventListener('click', () => {
+  //     viewDetail(products[index]);
+  //   });
+  // });
 }
 
 function groupAndSortByCategory(products) {
@@ -90,15 +87,20 @@ function groupAndSortByCategory(products) {
   return sortedGroups;
 }
 
-function renderProductCard(p, temporaryImageUrl) {
+function renderProductCard(p) {
+  let isSoda = SODA.includes(p[CATEGORY]);
   return `
-      <div class="tag">${p[BRAND]}</div>
-      <img src="${temporaryImageUrl ? temporaryImageUrl : p[IMAGE]}" alt="${p[NAME]}">
+      <input type="hidden" class="product-sku" value="${p[SKU]}">
+      ${p[BRAND] ? `<div class="tag">${p[BRAND]}</div>` : ""}
+      <img src="${p.previewImageUrl ? p.previewImageUrl : p[IMAGE]}" alt="${p[NAME]}">
       <div class="product-name">${p[NAME]}</div>
       <div class="product-price">
-        <div><span class="price-label">Lẻ:</span> ${p[UNIT_PRICE] ? p[UNIT_PRICE] : ""}₫</div>
+        ${isSoda
+      ? `<div><span class="price-label">Lẻ:</span> ${p[UNIT_PRICE] ? p[UNIT_PRICE] : ""}₫</div>
         ${p[PACK_PRICE] ? `<div><span class="price-label">Lốc:</span> ${p[PACK_PRICE]}₫</div>` : ''}
-        ${p[BOX_PRICE] ? `<div><span class="price-label">Thùng/bao:</span> ${p[BOX_PRICE]}₫</div>` : ''}
+        ${p[BOX_PRICE] ? `<div><span class="price-label">Thùng:</span> ${p[BOX_PRICE]}₫</div>` : ''}`
+      : `<div><span class="price-label">Giá:</span> ${p[UNIT_PRICE] ? p[UNIT_PRICE] : ""}₫</div>`}
+        
       </div>`
 }
 
@@ -107,17 +109,22 @@ document.getElementById('searchInput').addEventListener('input', e => {
     activeCategoryButton.classList.remove("active");
   }
   const keyword = e.target.value.toLowerCase();
-  const filtered = products.filter(p => normalizeString(p[NAME].toLowerCase()).includes(normalizeString(keyword.toLowerCase())));
+  const filtered = products.filter(p => {
+    let isNameMatch = normalizeString(p[NAME] ? p[NAME].toLowerCase() : "").includes(normalizeString(keyword.toLowerCase()));
+    let isBrandMatch = normalizeString(p[BRAND] ? p[BRAND].toLowerCase() : "").includes(normalizeString(keyword.toLowerCase()))
+    return isNameMatch || isBrandMatch;
+  });
   renderProducts(filtered);
 });
-
 
 var activeCategoryButton = null;
 var selectedCategory = null;
 const categoryButtons = document.getElementById("categoryButtons");
 function renderCategories(categories) {
-
   categories.forEach(category => {
+    if (category === "null") {
+      return;
+    }
     const btn = document.createElement("button");
     btn.textContent = category;
     btn.addEventListener("click", () => {
@@ -143,7 +150,11 @@ function filterByCategory(category) {
   if (category === "Tất cả") {
     filtered = products
   } else {
-    filtered = products.filter(p => normalizeString(p[CATEGORY].toLowerCase()).includes(normalizeString(category.toLowerCase())));
+    filtered = products
+      .filter(p =>
+        p[CATEGORY]
+        && normalizeString(p[CATEGORY].toLowerCase())
+          .includes(normalizeString(category.toLowerCase())));
   }
   renderProducts(filtered);
 }
@@ -154,3 +165,21 @@ function normalizeString(str) {
     .replace(/[\u0300-\u036f]/g, "")  // bỏ dấu
     .toLowerCase();                   // chuyển về lowercase
 }
+
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

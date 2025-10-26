@@ -11,8 +11,21 @@ const BOX_PRICE = "Giá thùng";
 const IMAGE = "Hình ảnh";
 const UNIT = "Đơn vị";
 const DESCRIPTION = "Ghi chú";
-const DEFAULT_IMAGE_URL = "/images/no-image.jpg";
 // ==============================
+const DEFAULT_IMAGE_URL = "/images/no-image.jpg";
+const EMPTY_PRODUCT = {
+    [SKU]: "",
+    [NAME]: "",
+    [CATEGORY]: "",
+    [BRAND]: "",
+    [UNIT_PRICE]: "",
+    [PACK_PRICE]: "",
+    [BOX_PRICE]: "",
+    [IMAGE]: DEFAULT_IMAGE_URL,
+    [UNIT]: "",
+    [DESCRIPTION]: "",
+    previewImageUrl: ""
+};
 
 // ==============================
 // Units
@@ -20,9 +33,9 @@ const DEFAULT_IMAGE_URL = "/images/no-image.jpg";
 const UNIT_BOTTLE = "chai";        // Bottle
 const UNIT_CAN = "lon";            // Can
 const UNIT_BOX = "hộp";            // Box
-const UNIT_PACKET = "gói";          // Packet
+const UNIT_PACKET = "gói";         // Packet
 const UNIT_ROLL = "cuộn";          // Roll
-const UNIT_RICE_CUP = "lon gạo";    // Rice Cup
+const UNIT_RICE_CUP = "lon gạo";   // Rice Cup
 const UNIT_KG = "kg";              // Kilogram
 const UNIT_100GRAM = "lạng";       // Tael (Vietnamese weight unit)
 const UNIT_LITER = "lít";          // Liter
@@ -33,11 +46,13 @@ const UNIT_BAG = "bịch";           // Bag / Pouch
 const UNIT_PACK = "lốc";           // Pack
 const UNIT_CARTON = "thùng";       // Carton / Box
 // ==============================
+const SODA = ["Nước ngọt", "Nước yến", "Nước khoáng", "Nước suối"];
 // ==============================
 // Weight & Volume Units
 // ==============================
 const VOLUMN_UNIT = [UNIT_100GRAM, UNIT_KG, UNIT_LITER, UNIT_500ML];
 const CATEGORY_BY_PIECE_OR_KG = ["Trứng gà", "Trứng vịt"];
+
 
 
 const CATEGORY_DISPLAY_NUMBER = 15;
