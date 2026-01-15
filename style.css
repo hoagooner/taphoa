@@ -54,7 +54,7 @@
  }
 
  /* Lưới sản phẩm */
- .product-grid {
+ #productGrid {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
    gap: 14px;
@@ -116,7 +116,7 @@
    font-size: 0.7rem;
  }
 
- .category-buttons {
+ #categoryPanel {
    margin: 3px 3px;
  }
 
@@ -131,10 +131,15 @@
    padding: 4px 10px;
  }
 
- .category-buttons button {
+ #categoryPanel button {
    padding: 5px 10px;
    margin: 2px 2px;
    font-size: 12px;
+ }
+
+ #categoryPanel .active {
+   background-color: #F0FFF3;
+   color: #112512;
  }
 
  button:hover {
@@ -169,6 +174,37 @@
    }
  }
 
+ .container {
+   display: flex;
+   height: 100vh;
+   /* QUAN TRỌNG */
+   overflow: hidden;
+ }
+
+ #categoryPanel {
+   flex: 0 0 150px;
+   overflow-y: auto;
+   /* scroll độc lập */
+   height: 100%;
+ }
+
+ #productGrid {
+   flex: 1;
+   overflow-y: auto;
+   height: 100%;
+
+   display: grid;
+   align-content: flex-start;
+   /* ⭐ QUAN TRỌNG */
+ }
+
+ #categoryPanel>div {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   height: 40px;
+ }
+
  @media (max-width: 400px) {
    html {
      font-size: 13px;
@@ -178,12 +214,19 @@
      font-size: 1.3rem;
    }
 
-   .product-grid {
-     grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+   #productGrid {
+     grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
      gap: 5px;
    }
- }
 
+   #categoryPanel {
+     flex: 0 0 100px;
+   }
+
+   #productGrid {
+     flex: 1;
+   }
+ }
 
  /* Modal */
  .modal {

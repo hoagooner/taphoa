@@ -1,0 +1,172 @@
+SKU	Tên sản phẩm	Danh mục	Thương hiệu	Hình ảnh	Ghi chú	Cập nhật	price_1	unit_1	price_2	unit_2	price_3	unit_3	price_4	unit_4	price_5	unit_5
+SP001	Mì Hảo Hảo tôm chua cay	Mì, miến, cháo, phở	Hảo Hảo	https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/2565/77622/bhx/slide-1_202410151354441725.jpg	test	19:53:33 13/1/2026	5000	gói								
+SP002	Mì 3 Miền bò hầm	Mì, miến, cháo, phở	3 Miền	https://vanmart.vn/thumbs/600x600x1/upload/product/img3345-9948.jpg		19:53:30 13/1/2026	4000	gói								
+SP003	Mì 3 Miền gold	Mì, miến, cháo, phở	3 Miền	/images/no-image.jpg		19:53:28 13/1/2026	4,000	gói								
+SP004	Mì 3 Miền chua cay	Mì, miến, cháo, phở	3 Miền	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9UcU9TdqWf3iAsntrW0mkUI09KIBaXi3amQ&s		19:26:16 13/1/2026	4,000	gói								
+SP005	Mì Omachi xốt bò hầm	Mì, miến, cháo, phở	Omachi	https://tmtdistribution.com/vnt_upload/product/masan/mi_sot_bo_ham.jpg		19:31:23 13/1/2026	8,000	gói								
+SP006	Mì Kokomi đại 90	Mì, miến, cháo, phở	Kokomi	https://minhcaumart.vn//media/com_eshop/products/resized/8936136167015-500x500.webp		07:29:54 4/1/2026	4,000	gói								
+SP007	Mì lẩu thái	Mì, miến, cháo, phở	Lẩu thái	https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/2565/82604/bhx/slide-1_202410151555211151.jpg		15:44:31 1/1/2026	8,000	gói								
+SP008	Phở Bò Vifon 65g	Mì, miến, cháo, phở	Vifon	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7iJ60QnuX90cr9YxaRdp48-QsRgHcwsC7xA&s		15:44:43 1/1/2026	8,000	gói								
+SP009	Phở phò Đệ nhất	Mì, miến, cháo, phở	Đệ nhất	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVln09SDwv-XekRpGtFDBhKInQmp2h9LZD_Q&s		15:45:51 1/1/2026	8,000	gói								
+SP010	Phở Bò Cung Đình	Mì, miến, cháo, phở	Cung Đình	https://img.lazcdn.com/g/p/e8447749349eb748165923b5c0aafdfe.jpg_720x720q80.jpg		07:30:01 4/1/2026	8,000	gói								
+SP011	Hủ tiếu Bò kho	Mì, miến, cháo, phở	Nhịp sống	https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/2965/80160/bhx/thiet-ke-chua-co-ten-2024-12-11t130607814_202412111307287495.jpg		19:12:12 13/1/2026	9,000	gói								
+SP012	Hủ tiếu Cung Đình	Mì, miến, cháo, phở	Cung Đình	https://cdn.tgdd.vn/Products/Images/2965/309206/bhx/hu-tieu-suon-heo-cung-dinh-goi-84g-202307271513378863.jpg		15:45:25 1/1/2026	9,000	gói								
+SP013	Cháo Gấu Đỏ thịt bằm	Mì, miến, cháo, phở	Gấu Đỏ	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRipK0UKBziSZAWY5ofthWutyqA27sFAZdcJg&s		15:45:09 1/1/2026	4,000	gói								
+SP014	Cháo Gấu Đỏ tổ yến	Mì, miến, cháo, phở	Gấu Đỏ	https://product.hstatic.net/1000288770/product/chao_to_yen_gau_do_vi_thit_ga_goi_50g_ab91576bd2f84953b97909b2df6726a4_grande.jpg		15:44:57 1/1/2026	8,000	gói								
+SP015	Cháo ăn liền Bích Chi cá hồi	Cháo gói	Bích Chi	chaobichchi_cahoi.jpg		2025-10-29	8,000									
+SP016	Cháo Cung Đình bò bằm	Cháo gói	Cung Đình	chaocungdinh_bobam.jpg		2025-10-29	7,000									
+SP017	Cháo Hảo Hảo tôm thịt	Cháo gói	Hảo Hảo	chaohhao_tomthit.jpg		2025-10-29	6,500									
+SP018	Cháo Vifon thịt bằm	Cháo gói	Vifon	chaovifon_thitbam.jpg		2025-10-29	6,500									
+SP019	Coca-Cola lon 330 ml	Nước	Coca-Cola	https://bizweb.dktcdn.net/thumb/grande/100/469/765/products/1503-9de8f3562b364e56b550ff30bc493122-2c0db7cc76fd4b7f8b3c767fb24bc277-d4f804d8fc474b4bae5f628ff0d632e0-master.jpg		22:14:57 30/10/2025	9,000	chai	48,000	lốc						
+SP020	Pepsi lon 330 ml	Nước	Pepsi	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4uBK3ey4IWus4w0jHBnRqNuep-qmDzpPaQ&s		15:46:41 1/1/2026	8,000	chai	45,000	lốc						
+SP021	7 Up lon 320ml	Nước	7 Up	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9I-PfOc2FU6s65pXJCbTJr88Cum6qrvCRNg&s		22:27:53 30/10/2025	10,000	chai	45,000	lốc						
+SP022	Mirinda lon 330 ml	Nước	Mirinda	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmd7w7sOW9eWrFZq-YA7b8nXXhB_uM-IUyQw&s		07:53:56 4/1/2026	8,000	chai	42,000	lốc						
+SP023	Coca-Cola chai 390ml	Nước	Coca-Cola	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXEBm_Y67jxbX2vtphpX1U0a12fWwE3a42Lg&s		09:46:15 1/1/2026	8,000	chai	45,000	lốc						
+SP024	Coca-Cola chai 1.5L	Nước	Coca-Cola	https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/2443/222274/bhx/hy6y65_202410101052522546.jpg		2025-10-29	18,000	chai								
+SP025	Pepsi chai 1.5L	Nước	Pepsi	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ6kZA68Eyu1ZZ-7EjPwmtgfeXR39rX1pveA&s		2025-10-29	17,000	chai								
+SP026	7Up chai 1.5L	Nước	7Up	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qmqvD-LT_YjtQMNwUXfNuKeXudcNVTQoyA&s		2025-10-29	17,000	chai								
+SP027	Sprite lon 330ml	Nước	Sprite	https://minhcaumart.vn//media/com_eshop/products/resized/sprite-lon-cao-330ml-MCM-500x500.webp		16:05:17 1/1/2026	9,000	chai	45,000	lốc						
+SP028	Sprite chai 390ml	Nước	Sprite	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7baO53hrntiBtwNUm48eaomLproKPMgGWyQ&s		2025-10-29	8,000	chai	45000	lốc						
+SP029	Fanta cam lon 330ml	Nước	Fanta	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRrtKlzkZ3R40OAG7XY34-6WxC_MvGiqPGpg&s		22:30:14 30/10/2025	10,000	chai	45,000	lốc						
+SP030	Fanta cam chai 390ml	Nước	Fanta	https://sieuthihoaba.com.vn/wp-content/uploads/2020/08/nuoc-giai-khat-fanta-huong-cam-390ml-x6-3-org.jpg		2025-10-29	7000	chai	42000	lốc						
+SP031	Sting dâu chai 330ml	Nước	Sting	https://product.hstatic.net/200000460455/product/sting_20dau_20pet_20_chai_20330ml__b8481e1e52514893beb0c86f76be938b_master.jpg		08:32:20 4/1/2026	9000	chai	50000	lốc						
+SP032	Sting dâu lon 330ml	Nước	Sting	https://satrafoods.com.vn/uploads/Images/san-pham/thuc-pham-cong-nghe/nuoc-giai-khat/8934588232220-5.jpg		16:05:49 1/1/2026	9000	chai	50,000	lốc						
+SP033	Sting vàng lon 320ml	Nước	Sting	https://horeco.vn/wp-content/uploads/2022/10/nuoc-tang-luc-sting-va%CC%80ng-320ml-24-lon-thung_1.jpg		2025-10-29	8000	chai	45000	lốc						
+SP034	Sting vàng chai 330ml	Nước	Sting	https://bizweb.dktcdn.net/100/514/431/products/c0dfd5aa4e394c829c9c78d24aabd765-jpeg.jpg?v=1724648865230		2025-10-29	8000	chai	45000	lốc						
+SP035	Revive chai 500ml	Nước	Revive	https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8934588843051.jpg.webp		2025-10-29	10000	chai	55000	lốc						
+SP036	Aquarius chai 500ml	Nước	Aquarius	https://production-cdn.pharmacity.io/digital/1080x1080/plain/e-com/images/ecommerce/P03762_11.jpg		2025-10-29	 	chai	52000	lốc						
+SP037	Nước trái cây Nutri cam 297ml	Nước	Nutri	https://cdn.tgdd.vn/Products/Images/2947/190310/bhx/sua-trai-cay-nutriboost-huong-cam-297ml-202202122134380628.jpg		19:13:12 13/1/2026	8000	chai	45000	lốc						
+SP038	Nước trái cây Nutri dâu 297ml	Nước	Nutri	https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8935049500131-1_2.jpg.webp		09:47:42 1/1/2026	8000	chai	45000	lốc						
+SP039	Trà xanh không độ 455ml	Nước	Không Độ	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXTvm2jxv8RFq1pRhrVedZWcflzDiR70BrA&s		16:06:20 1/1/2026	9000	chai	48000	lốc						
+SP040	Trà Oolong Tea+ 455ml	Nước	Tea+	https://product.hstatic.net/1000288770/product/tra_o_long_tea_plus_chai_455ml_7d7f262698024b159307bb84bb27bc67_master.jpg		09:46:48 1/1/2026	10000	chai	55000	lốc						
+SP041	Red Bull lon 250ml	Nước	Red Bull	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8bZ2BmDM8JN2wbPgIWYTfjv_XuwxNI_nVA&s		09:46:30 1/1/2026	12000	chai	72000	lốc						
+SP042	Number One chai 330ml	Nước	Number One	https://cf.shopee.vn/file/9f5f59d62db81ea61f6373850f1a9b54_tn		2025-10-29	10000	chai	50000	lốc						
+SP043	Nước suối Aquafina 500ml	Nước	Aquafina	https://minhcaumart.vn//media/com_eshop/products/resized/8934588063053-500x500.webp		2025-10-29	5000	chai								
+SP044	Nước suối Aquafina 1.5L	Nước	Aquafina	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiZagBFmnhbE3R6ruNAZs9f6PFl66egcmZWQ&s		2025-10-29	9000	chai								
+SP045	Nước yến Sanest lon 190ml	Nước	Sanest	https://bizweb.dktcdn.net/thumb/grande/100/523/505/products/s001-1.jpg?v=1742200551113		15:55:29 1/1/2026	18000	chai	102000	lốc						
+SP046	Hủ yến sào Sanest	Yến sào	Sanest	https://product.hstatic.net/1000157881/product/lo-co-duong_0cc812bf13534fe7be6301c94f347afb_master.png		07:35:05 4/1/2026	40000	hủ								
+SP047	Bánh Orion ChocoPie hộp 12 cái	Bánh	Orion	https://lh3.googleusercontent.com/F9Wyfzu2RnHmS83Z7f7BjibyGRi8fy_7VxHBVDwU6kxIk13Mv6yrRy3hi3TDZGbsSmiHDeYRFMQYHthmRN6xm0ubnMAz2H3Zqw		21:56:49 12/1/2026	50000	hộp								
+SP048	Bánh Orion Custas hộp 12 cái	Bánh	Orion	https://cdn.tgdd.vn/Products/Images/3358/77006/bhx/banh-kem-trung-custas-hop-282g-12-cai-202210250852389576.jpg		2025-10-29	50000	hộp								
+SP049	Bánh Orion Goute	Bánh	Orion	https://lanchi.vn/wp-content/uploads/2021/12/BANH-GOUTE-ORION-288G-300x225.jpg		11:47:33 3/1/2026	26000	Đơn vị								
+SP050	Bánh gạo phô mai bắp One One	Bánh	One One	https://cdn.tgdd.vn/Products/Images/2687/161252/banh-gao-ngot-vi-pho-mai-bap-one-one-goi-118g-120822-044713-600x600.jpg		16:14:29 3/1/2026	24000	Đơn vị								
+SP051	Bánh gạo Ichi mật ong	Bánh	Ichi	https://kingfoodmart.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fsc_pcm_product%2Fprod%2F2023%2F4%2F28%2F1147-367780.jpg&w=3840&q=75		16:14:20 3/1/2026	16000	Đơn vị								
+SP052	Bánh gạo nướng An	Bánh	An	https://nhaphanphoibanhkeo.vn/upload/product/banh-gao-nuong-vi-tu-nhien-orion-an-goi-1512g1659327651.png		09:51:01 3/1/2026	16000	Đơn vị								
+SP053	Bánh gạo khoai lang tím One One	Bánh	One One	https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lude21p9ax3z5c		09:51:27 3/1/2026	18000	Đơn vị								
+SP054	Bánh Cosy Marie 360g	Bánh	Kinh Đô	https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8934680113861-tet-1.jpg.webp		2025-10-29	28000	Đơn vị								
+SP055	Bánh quy Cosy 144g	Bánh	Kinh Đô	https://product.hstatic.net/1000288770/product/banh_quy_sua_cosy_marie_goi_144g_232cf56087804b01a316bd63efefbd35_master.jpg		19:34:46 4/1/2026	15000	Đơn vị								
+SP056	Bánh Solite cuộn	Bánh	Solite	https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8934680042871-1-1.jpg.webp		2025-10-29	30000	Đơn vị								
+SP057	Bánh Hura kem hộp 360g	Bánh	Hura	https://cdn.tgdd.vn/Products/Images/3358/102595/bhx/banh-trung-cuon-kem-bo-sua-hura-swissroll-hop-360g-20-cai-202312201605299069.jpg		2025-10-29	29000	Đơn vị								
+SP058	Dầu ăn Ông già Neptune chai 1L	Dầu ăn	Neptune	https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/2286/226995/bhx/226995-slide_202409121350273101.jpg		20:57:38 12/1/2026	55000	chai								
+SP059	Dầu ăn Tường An 1L	Dầu ăn	Tường An	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJKr2HLYQuvpi9DrK_t7gJwF1JOv-pdhSow&s		20:57:35 12/1/2026	45000	chai								
+SP060	Dầu ăn Simply đậu nành 1L	Dầu ăn	Simply	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxGUKG28LxgKx5wVjhf-KGh6qvLmIz_GCPw&s		20:57:42 12/1/2026	55000	chai								
+SP061	Dầu ăn Meizan 1L	Dầu ăn	Meizan	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AZmCrDCTxJeM6HVejmMb8NHdT6zenZWidA&s		20:57:45 12/1/2026	45000	chai								
+SP062	Dầu gạo Lứt Simply 1L	Dầu ăn	Simply	https://product.hstatic.net/200000401369/product/dau_gao_simply_1l_e423e8cfc3254cc4bbfa7e1ba6c361f2_1024x1024.jpg		20:58:11 12/1/2026	60000	chai								
+SP063	Mắm Nam Ngư nhỏ 500ml	Mắm	Nam Ngư	https://bizweb.dktcdn.net/thumb/grande/100/469/765/products/1x-22a6b62b-debe-4680-97d8-64cdcd2faa6a.jpg		20:58:15 12/1/2026	33000	chai								
+SP064	Mắm Đệ Nhị 900ml	Mắm	Nam Ngư	https://bizweb.dktcdn.net/thumb/1024x1024/100/511/037/products/nuoc-cham-nam-ngu-de-nhi-chai-900ml-201903151030027270.jpg?v=1718881193043		18:46:11 4/1/2026	18000	Đơn vị								
+SP065	Mắm hương cá hồi Chinsu 500ml	Mắm	Chinsu	https://cdn.tgdd.vn/Products/Images/2289/209456/bhx/nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050432162.jpg		19:38:05 4/1/2026		Đơn vị								
+SP067	Nước mắm Thái Long 500ml	Mắm	Thái Long	https://lavela.com.vn/upload/images/R39D/NMPT-Thai-Long-20N-nhan-do-hao-hang-500.png		15:05:03 2/1/2026	25000	Đơn vị								
+SP068	Xì Dầu Chinsu Thường - Nắp Trắng	Xì dầu	Chinsu	https://bonta-m-company.com/wp-content/uploads/2024/07/anh_chup_man_hinh_2022-05-12_luc_23-32-37_b35bf6c8292e42dfa653dcf4f5595216_master.png		19:36:01 4/1/2026		Đơn vị								
+SP069	Xì dầu Tam Thái Tử nhất ca 500ml	Xì dầu	Tam Thái Tử	https://asianoeki.com/cdn/shop/products/New-8936017367091.jpg?v=1666087693		19:35:57 4/1/2026		Đơn vị								
+SP070	Bánh socola Nice	Bánh		https://i.ibb.co/My3NZh0P/blob.jpg		07:46:37 1/11/2025	30000	Đơn vị								
+SP071	Bánh socola Tình	Bánh		https://i.ibb.co/3Ycq7Ftf/blob.jpg		07:47:08 1/11/2025	60000	Đơn vị								
+SP072	Bánh Solite Kinh Đô	Bánh		https://i.ibb.co/C3NnH2f8/blob.jpg		07:55:10 1/11/2025	30000	Đơn vị								
+SP073	Bánh Hura deli xách	Bánh		https://i.ibb.co/f69wbGr/blob.jpg		07:56:35 1/11/2025	50000	Đơn vị								
+SP074	Hạt nêm Meizan	Gia vị		https://i.ibb.co/jvHv4f7P/blob.jpg		08:17:10 1/11/2025	25000	Đơn vị								
+SP075	Hạt nêm Chin su	Gia vị		https://i.ibb.co/HpGRnXrh/blob.jpg		08:18:23 1/11/2025	30000	Đơn vị								
+SP076	Hạt nêm knorr 170g	Gia vị		https://i.ibb.co/hRwmCpXR/blob.jpg		08:19:25 1/11/2025	15000	Đơn vị								
+SP077	Bánh canh khô Hạnh	Bánh		https://i.ibb.co/1fqf43S9/blob.jpg		08:19:59 1/11/2025	30000	Đơn vị								
+SP078	Bánh tráng Đại Lộc 0,5kg	Bánh		https://i.ibb.co/NgCC5cZS/blob.jpg		08:21:10 1/11/2025	15000	Đơn vị								
+SP079	Bánh tráng cuốn mè đen Đại lộc	Bánh		https://i.ibb.co/dsmgDFQw/blob.jpg		08:23:39 1/11/2025	10000	Đơn vị								
+SP081	Đường cát	Gia vị		https://i.ibb.co/M5s4yDDQ/blob.jpg		19:58:32 13/1/2026	12000	0,5 kg	23000	kg						
+SP082	Bột giặt Omo 380g	Giặt - xả		https://i.ibb.co/zWGtHqJT/blob.jpg		08:25:07 1/11/2025	20000	Đơn vị								
+SP083	Bột giặt Aba 770g	Giặt - xả		https://i.ibb.co/mCJtpzdb/blob.jpg		08:26:10 1/11/2025	35000	Đơn vị								
+SP084	Vị tinh ajinomoto 400g	Gia vị		https://i.ibb.co/9mZP3Z9d/blob.jpg		08:27:50 1/11/2025	30000	Đơn vị								
+SP085	Vị tinh Aone 453g	Gia vị		https://i.ibb.co/DDVN1g5S/blob.jpg		08:28:28 1/11/2025	30000	Đơn vị								
+SP086	Miến Phương Đông			https://i.ibb.co/kTN6DT2/blob.jpg		08:31:17 1/11/2025	20000	Đơn vị								
+SP087	Bánh quy Coconut cracker	Bánh		https://i.ibb.co/21BkGjSP/blob.jpg		15:33:30 1/11/2025	10000	Đơn vị								
+SP088	Bánh gấc An Bảo	Bánh		https://i.ibb.co/MkrG6pwg/blob.jpg		15:34:06 1/11/2025	10000	Đơn vị								
+SP089	Thạch sữa chua hoa quả Yogurt	Kẹo		https://i.ibb.co/nMgsqWgH/blob.jpg		15:45:52 1/11/2025	50000	Đơn vị								
+SP090	Thạch caramel Jelly Long Hải			https://i.ibb.co/7tVzQZK6/blob.jpg		15:46:53 1/11/2025	30000	Đơn vị								
+SP091	Kẹo alpenliebe	Kẹo		https://i.ibb.co/HpfVDvLV/blob.jpg		15:47:47 1/11/2025	20000	Đơn vị								
+SP092	Yến sào Khánh Hoà 6 lọ	Yến sào		https://i.ibb.co/fz2K0yDH/blob.jpg		23:48:58 6/1/2026	200000	lốc								
+SP093	Xách nước yến Rita	Nước		https://i.ibb.co/d0jKHyK2/blob.jpg		23:49:18 6/1/2026	50000	lốc								
+SP094	Xách nước yến Nutriphar	Nước		https://i.ibb.co/NdQYTwR0/blob.jpg		23:49:25 6/1/2026	50000	lốc								
+SP095	xách 5 lon yến Ngân Nhĩ Rita	Nước		https://i.ibb.co/wFWX77ns/blob.jpg		23:49:38 6/1/2026	50000	lốc								
+SP096	Thùng xốp			https://i.ibb.co/RTL0z0Dk/blob.jpg		17:32:48 1/11/2025										
+SP097	Nước giặt xả Care	Giặt - xả		https://i.ibb.co/gLKzN3w7/blob.jpg		17:51:27 1/11/2025	120000	Đơn vị								
+SP098	Nước xả vải Majestic	Giặt - xả		https://i.ibb.co/gLKzN3w7/blob.jpg		17:52:08 1/11/2025	100000	Đơn vị								
+SP099	Đường phèn 0,5kg	Gia vị		https://i.ibb.co/4ZCkZQT8/blob.jpg		18:06:44 1/11/2025	17000	Đơn vị								
+SP100	Xốt gia vị	Gia vị		https://i.ibb.co/Xf49MMhX/blob.jpg		18:43:53 1/11/2025	12000	Đơn vị								
+SP117	Ngũ cốc MacCereal			https://i.ibb.co/0jcH0hp1/blob.jpg		11:49:43 3/1/2026	60000	Đơn vị								
+SP120	Tương ớt chinsu	Gia vị		https://i.ibb.co/XZXH5PdV/blob.jpg		11:43:04 3/1/2026	17000	Đơn vị								
+SP121	Thùng tiger lùn	Bia		https://i.ibb.co/7dV9qMc1/blob.jpg		15:17:14 2/1/2026	290000	Đơn vị								
+SP122	Xì dầu chinsu tỏi ớt	Gia vị		https://i.ibb.co/V0Zdrf60/blob.jpg		11:36:17 3/1/2026	18000	Đơn vị								
+SP123	Mắm đệ nhất 750ml	Mắm		https://i.ibb.co/N6mwcfVx/blob.jpg		10:25:42 2/1/2026	35000	Đơn vị								
+SP124	Lau sàn True Care	Lau sàn		https://i.ibb.co/jkWMc3BR/blob.jpg		10:27:06 2/1/2026	27000	Đơn vị								
+SP125	Thùng bia larue	Bia		https://i.ibb.co/G4sDjQLJ/blob.jpg		16:15:41 3/1/2026	270000	Đơn vị								
+SP126	Dầu simply đậu nành	Dầu ăn		https://i.ibb.co/hFJ7F97x/blob.jpg		14:53:41 2/1/2026	56000	Đơn vị								
+SP127	Dầu simply gạo lứt	Dầu ăn		https://i.ibb.co/9kZc3p5V/blob.jpg		10:28:54 2/1/2026	60000	Đơn vị								
+SP128	Thùng bia huda	Bia		https://i.ibb.co/8n22V6zk/blob.jpg		15:12:28 2/1/2026	270000	Đơn vị								
+SP129	Xì dầu maggi đậu nành	Gia vị		https://i.ibb.co/3YWpJ1zx/blob.jpg		11:35:21 3/1/2026	18000	Đơn vị								
+SP130	Phở khô	Mì, miến, cháo, phở		https://i.ibb.co/C5RYhsxb/blob.jpg		15:20:10 2/1/2026	18000	Đơn vị								
+SP132	Bún khố 0,5kg	Mì, miến, cháo, phở		https://i.ibb.co/wZ5396bT/blob.jpg		15:21:00 2/1/2026	13000	Đơn vị								
+SP134	Mắm Ông tây	Mắm		https://i.ibb.co/rfLLnh68/blob.jpg		15:01:54 2/1/2026	20000	Đơn vị								
+SP135	Mắm thái long 750ml	Mắm		https://i.ibb.co/bgVCLbtP/blob.jpg		15:04:13 2/1/2026	35000	Đơn vị								
+SP136	Thuốc con ngựa	Thuốc lá		https://i.ibb.co/23jp2qNc/blob.jpg		15:27:57 2/1/2026	27000	Đơn vị								
+SP137	Bánh quy hạt mè đen	Bánh		https://i.ibb.co/39ZXVrtd/blob.jpg		15:43:56 1/1/2026	20000	Đơn vị								
+SP138	Chổi sương trắng	Chổi		https://i.ibb.co/dJJx1Fbq/blob.jpg		15:48:26 1/1/2026	10000	Đơn vị								
+SP139	Chổi sương xanh	Chổi		https://i.ibb.co/ynNgFKx2/blob.jpg		15:48:46 1/1/2026	13000	Đơn vị								
+SP140	Chổi sương có cán	Chổi		https://i.ibb.co/mCVMrW04/blob.jpg		15:49:11 1/1/2026	20000	Đơn vị								
+SP141	Chổi cọ	Chổi		https://i.ibb.co/8DJtwT9p/blob.jpg		15:49:36 1/1/2026	22000	Đơn vị								
+SP142	Lốc yến	Nước		https://i.ibb.co/XfK7Cm2J/blob.jpg		23:30:31 6/1/2026	50000	lốc								
+SP143	Trà bí đao wonderfarm cao	Nước		https://i.ibb.co/kVcmxwtQ/blob.jpg		23:30:23 6/1/2026	35000	lốc								
+SP144	Bí đao wonderfarm lùn	Nước		https://i.ibb.co/rn5fng4/blob.jpg		23:30:18 6/1/2026	45000	lốc								
+SP145	Lốc nước compat	Nước		https://i.ibb.co/wrs0y3P3/blob.jpg		23:30:26 6/1/2026	48000	lốc								
+SP146	nabati lớn	Bánh		https://i.ibb.co/tw4SGJn0/blob.jpg		16:28:26 1/1/2026	50000	Đơn vị								
+SP147	Bánh socola combo pie	Bánh		https://i.ibb.co/W9sjbsj/blob.jpg		16:29:20 1/1/2026	20000	Đơn vị								
+SP148	Bánh lotte chocolat 6 gói	Bánh		https://i.ibb.co/Ng0wf0p7/blob.jpg		11:48:03 3/1/2026	25000	Đơn vị								
+SP149	Bánh bông lan doca	Bánh		https://i.ibb.co/k2K95R7P/blob.jpg		16:31:48 1/1/2026	60000	Đơn vị								
+SP150	Bánh orion custas (có xách)	Bánh		https://i.ibb.co/Q3wytr3L/blob.jpg		08:28:56 4/1/2026	65000	Đơn vị								
+SP151	Mắm Nam ngư lớn 750ml	Mắm		https://i.ibb.co/DDR7ks9J/blob.jpg		14:50:01 2/1/2026	46000	Đơn vị								
+SP152	Dầu ăn Cái lân 500ml	Dầu ăn		https://i.ibb.co/jvpGCszt/blob.jpg		14:55:33 2/1/2026	20000	Đơn vị								
+SP153	Dầu ăn simply 2L	Dầu ăn		https://i.ibb.co/GQntCvSw/blob.jpg		14:56:21 2/1/2026	110000	Đơn vị								
+SP154	Dầu ăn Ông già 2L	Dầu ăn		https://i.ibb.co/20V1bTgV/blob.jpg		14:56:54 2/1/2026	110000	Đơn vị								
+SP155	Mắm madame lân	Mắm		https://i.ibb.co/4R4cVpfh/blob.jpg		14:58:03 2/1/2026	30000	Đơn vị								
+SP156	Bịch nescafe	Cà phê		https://i.ibb.co/WvbFfMjX/blob.jpg	1 gói 3500	11:37:05 3/1/2026	150000	Đơn vị								
+SP157	Bịch nescafe Việt	Cà phê		https://i.ibb.co/xSmLjZLG/blob.jpg		15:01:01 2/1/2026	140000	Đơn vị								
+SP158	Vim nhỏ 550ml	Lau sàn		https://i.ibb.co/JwFMWL4g/blob.jpg		15:31:18 2/1/2026	23000	Đơn vị								
+SP159	Vim lớn 880ml	Lau sàn		https://i.ibb.co/m5kHHXwN/blob.jpg		15:31:28 2/1/2026	35000	Đơn vị								
+SP160	Bịch ngũ cốc yến mạch			https://i.ibb.co/bY6PZ7w/blob.jpg		15:16:00 2/1/2026	65000	Đơn vị								
+SP161	Kẹo đậu	Kẹo		https://i.ibb.co/gLxZW64B/blob.jpg		15:09:20 2/1/2026	15000	Đơn vị								
+SP162	Bột nêm ajingon 170g	Gia vị		https://i.ibb.co/HL3SZ66F/blob.jpg		15:24:13 2/1/2026	15000	Đơn vị								
+SP163	Băng keo lớn			https://i.ibb.co/S4XNh48x/blob.jpg		15:37:13 2/1/2026	10000	Đơn vị								
+SP164	Bịch bánh sapie	Bánh		https://i.ibb.co/VfvsnDX/blob.jpg		13:01:48 4/1/2026	20000	Đơn vị								
+SP165	sữa đặc lon lớn 1kg	Sữa		https://i.ibb.co/My3PZPR4/blob.jpg		13:01:07 4/1/2026	40000	Đơn vị								
+SP166	Sữa tươi Cô gái hà lan 	Sữa		https://i.ibb.co/xqPC48KX/blob.jpg	lẻ 8k	23:34:35 6/1/2026	8000	hộp	30000	lốc						
+SP167	sữa milo lốc	Sữa		https://i.ibb.co/YBWkkcxC/blob.jpg	lẻ 8	23:34:50 6/1/2026	8000	hộp	30000	lốc						
+SP168	Sữa Yomost	Sữa		https://i.ibb.co/DgkVJ8Ck/blob.jpg	lẻ 8 (7 cũng được)	23:35:04 6/1/2026	8000	hộp	30000	lốc						
+SP169	Sữa kun lớn 	Sữa		https://i.ibb.co/hJwvR6gH/blob.jpg	lẻ 8	23:35:14 6/1/2026	8000	hộp	30000	lốc						
+SP170	Sữa kun nhỏ	Sữa		https://i.ibb.co/ZzXsZyW0/blob.jpg		23:35:24 6/1/2026	6000	hộp	20000	lốc						
+SP171	Sữa bắp	Sữa		https://i.ibb.co/wrrZhG63/blob.jpg		23:35:33 6/1/2026	8000	hộp	28000	lốc						
+SP172	sữa Fristi	Sữa		https://i.ibb.co/nqGPKCvM/blob.jpg		23:35:49 6/1/2026	5000	hộp	25000	lốc						
+SP173	Sữa cô gái hà lan bịch 	Sữa		https://i.ibb.co/bMPMJZGT/blob.jpg	3 gói 20	23:35:55 6/1/2026	7000	hộp								
+SP174	sữa đặc bịch	Sữa		https://i.ibb.co/5g5hng87/blob.jpg		01:04:36 5/1/2026	36000	lon								
+SP175	sữa đặc hà lan lon	Sữa		https://i.ibb.co/4ws2Gy52/blob.jpg		15:28:10 3/1/2026	33000	lon								
+SP176	sữa ông thọ 	Sữa		https://i.ibb.co/F4RqwHSG/blob.jpg		15:28:39 3/1/2026	26000	lon								
+SP177	sữa đặc hoàn hảo	Sữa		https://i.ibb.co/CpQHjqF3/blob.jpg		01:04:26 5/1/2026	21000	lon								
+SP178	sữa nuti hộp nhỏ	Sữa		https://i.ibb.co/nMm7mjgw/blob.jpg		23:36:42 6/1/2026	6000	Đơn vị	20000	lốc						
+SP179	Mì trộn gói	Mì, miến, cháo, phở		https://i.ibb.co/1trHmCHc/blob.jpg		11:46:24 5/1/2026	8000	Đơn vị								
+SP180	mì trộn Omachi hộp	Mì, miến, cháo, phở		https://i.ibb.co/wZvhPQND/blob.jpg		15:33:54 3/1/2026	14000	Đơn vị								
+SP181	mì trộn Cung đình hộp	Mì, miến, cháo, phở		https://i.ibb.co/kVqSPDYB/blob.jpg		15:34:13 3/1/2026	14000	Đơn vị								
+SP182	bánh Chocopie nhỏ 2 cái 	Bánh		https://i.ibb.co/BVH0sYSt/blob.jpg		15:36:23 3/1/2026	10000	Đơn vị								
+SP183	sữa Fami hộp lốc	Sữa		https://i.ibb.co/9m069hXb/blob.jpg	5k/hộp	23:36:51 6/1/2026	5000	hộp	26000	lốc						
+SP184	Bánh gạo mật ong Ichi	Bánh		https://i.ibb.co/Qj6J3zg2/blob.jpg		15:40:05 3/1/2026	16000	Đơn vị								
+SP185	bánh gạo An 	Bánh		https://i.ibb.co/3mJGPvHj/blob.jpg		15:41:02 3/1/2026	16000	Đơn vị								
+SP186	Bánh gạo one one phô mai	Bánh		https://i.ibb.co/27yXpH0K/blob.jpg		15:57:13 3/1/2026	24000	Đơn vị								
+SP187	Mì cung đình	Mì, miến, cháo, phở		https://i.ibb.co/spYzbctz/blob.jpg		07:28:59 4/1/2026	7000	Đơn vị								
+SP188	Bánh nabati 170g	Bánh		https://i.ibb.co/LDYPhNHs/blob.jpg		21:59:33 12/1/2026	20000	gói								
+SP189	Bánh nabati 110g	Bánh		https://i.ibb.co/whcQ9CJr/blob.jpg		21:59:40 12/1/2026	10000	gói								
+SP190	Cơm cháy Ngọc Ánh	Bánh		https://i.ibb.co/vxV8F9tB/blob.jpg		12:29:03 4/1/2026	5000	Đơn vị								
+A1768228848207	test			/images/no-image.jpg	asdfasdf	21:40:48 12/1/2026	111	chai	222	lốc	333	thùng				
+A1768229841978	test1			/images/no-image.jpg	123123	21:58:17 12/1/2026	11111	chai	12123	lon	23123	hộp				
+A1768307602475	test			https://i.ibb.co/C3YYWZh3/blob.jpg		19:33:22 13/1/2026	23000	gói	100000	thùng						

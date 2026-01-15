@@ -1,0 +1,16 @@
+ID	Đơn vị
+1	chai
+2	lon
+3	hộp
+4	gói
+5	lốc
+6	thùng
+7	hủ
+8	0,5 kg
+9	kg
+10	lạng
+11	500ml
+12	lít
+13	bịch
+14	cuộn
+15	bao
