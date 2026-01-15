@@ -7,6 +7,7 @@ const CATEGORY = "Danh mục";
 const BRAND = "Thương hiệu";
 const IMAGE = "Hình ảnh";
 const DESCRIPTION = "Ghi chú";
+const DATE_ADDED = "Cập nhật";
 // ==============================
 const DEFAULT_IMAGE_URL = "/images/no-image.jpg";
 const EMPTY_PRODUCT = {
@@ -53,7 +54,7 @@ const CATEGORY_DISPLAY_NUMBER = 15;
 const SHEET_ID = "1pc9zuB3fkrSWypGQaVECfCLBLXC2B6FOkBW1eXZnZyM";
 const PRODUCT_SHEET_NAME = "products";
 const UNIT_SHEET_NAME = "unit";
-const CATEGORY_SHEET_NAME = "Sheet2";
+const CATEGORY_SHEET_NAME = "category";
 const sheetUrl = (sheetName) => `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${sheetName}`;
 // ==============================
 

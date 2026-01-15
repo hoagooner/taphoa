@@ -20,18 +20,21 @@ async function viewDetail(sku) {
     <div class="row">
         Tên <input type="text" id="modalName" value="${selectedProduct[NAME]}"/>
     </div>
+    <div class="row">
+        Danh mục
+        <select id="modalCategory">
+            ${categories.map(c => `<option value="${c['Danh mục']}">${c['Danh mục']}</option>`).join('')}
+        </select>
+    </div>
     <div id="priceByUnit"></div>
     <label>Ghi chú</label>
     <textarea id="modalDescription">${selectedProduct[DESCRIPTION] || ""}</textarea>
     `;
 
-    // <label>Danh mục</label>
-    // <select id="modalCategory"></select></br>
-    // <label>Thương hiệu</label>
-    // <select id="modalBrand"></select>
-    // fetchCategoryAndBrand();
+    // select category
+    document.getElementById("modalCategory").value = selectedProduct[CATEGORY] || categories[0]['Danh mục'];
 
-    // Generate price by unit rows
+    // generate price by unit rows
     generatePriceByUnit();
     saveBtn.onclick = updateProduct;
 }
@@ -181,7 +184,7 @@ function buildSubmitPayload() {
         selectedProduct[BRAND],
         selectedProduct[IMAGE],
         selectedProduct[DESCRIPTION],
-        new Date().toLocaleString('vi-VN'),
+        new Date().toISOString(),
         selectedProduct['price_1'],
         selectedProduct['unit_1'],
         selectedProduct['price_2'],
@@ -316,13 +319,20 @@ function generateDetailHTML() {
         <img src="" id="modalImage" onclick="openImageViewer(this.src)"><br>
         <input type="file" accept="image/*" capture="environment" id="cameraInput" onchange="previewImage();"><br>
         <div class="row">
-            Tên <input type="text" id="modalName" value=""/></div>
+            Tên <input type="text" id="modalName" value=""/>
+        </div>
+        <div class="row">
+            Danh mục
+            <select id="modalCategory">
+                ${categories.map(c => `<option value="${c['Danh mục']}">${c['Danh mục']}</option>`).join('')}
+            </select> 
+        </div>
         <div id="priceByUnit">
            <div class="row">
                 Giá
                 <input type="text" id="price_1" value=""/>
                 <select id="unit_1">
-                    <option value="">Đơn vị</option>
+                    <option value="Đơn vị">Đơn vị</option>
                     ${units.map(unit => `<option value="${unit}">${unit}</option>`).join('')}
                 </select>
                 <button onclick="createUnitRow()" id="addNewUnit">Thêm</button>

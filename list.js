@@ -2,6 +2,16 @@ var products = [];
 var categories = [];
 var units = [];
 
+function fetchCategories() {
+  fetch(sheetUrl(CATEGORY_SHEET_NAME))
+    .then(res => res.text())
+    .then(text => {
+      categories = handleFetchData(text);
+      renderCategories(categories);
+    });
+}
+fetchCategories();
+
 function fetchProducts() {
   document.getElementById('productGrid').innerHTML = "";
   fetch(sheetUrl(PRODUCT_SHEET_NAME))
@@ -9,10 +19,12 @@ function fetchProducts() {
     .then(text => {
 
       products = handleFetchData(text);
+      products.sort((a, b) => {
+        if (!a[DATE_ADDED]) return 1;
+        if (!b[DATE_ADDED]) return -1;
+        return b[DATE_ADDED].localeCompare(a[DATE_ADDED]);
+      });
       renderProducts(products);
-
-      categories = ["Tất cả", ...getTopCategories(products)];
-      renderCategories(categories);
     });
 }
 fetchProducts();
@@ -25,7 +37,6 @@ function fetchUnits() {
     });
 }
 fetchUnits();
-
 
 function handleFetchData(text) {
   const jsonString = text.match(/setResponse\((.*)\);/s)[1];
@@ -98,13 +109,15 @@ function renderProductCard(p) {
   for (let i = 1; i <= 5; i++) {
     let unit = p[`unit_${i}`] && p[`unit_${i}`] !== 'Đơn vị' ? p[`unit_${i}`] : 'Giá';
     if (p[`price_${i}`]) {
-      priceByUnitHTML += `<div><span class="price-label">${capitalize(unit)}:</span> ${p[`price_${i}`]}₫</div>`
+      priceByUnitHTML +=
+        `<span class="price-label">${capitalize(unit)}:</span>
+        <span class="price">${p[`price_${i}`]}₫</span><br>`;
     }
   }
   return `
       <input type="hidden" class="product-sku" value="${p[SKU]}">
       <img src="${p.previewImageUrl ? p.previewImageUrl : p[IMAGE]}" alt="${p[NAME]}">
-      <div class="product-name">${p[NAME]}</div>
+      <div class="product-name">${capitalize(p[NAME])}</div>
       <div class="product-price">${priceByUnitHTML}</div>`
 }
 
@@ -129,35 +142,58 @@ document.getElementById('searchInput').addEventListener('input', e => {
 
 var activeCategoryButton = null;
 var selectedCategory = null;
-const categoryButtons = document.getElementById("categoryButtons");
+const categoryPanel = document.getElementById("categoryPanel");
 function renderCategories(categories) {
-  categories.forEach(category => {
-    if (category === "null") {
+  categories.forEach(obj => {
+    var category = obj["Danh mục"];
+    var imageUrl = obj["Hình ảnh"];
+    if (!category || category.trim() === "") {
       return;
     }
-    const btn = document.createElement("button");
+    const div = document.createElement("div");
+    const btn = document.createElement("span");
+    const image = document.createElement("img");
+    image.src = imageUrl ? imageUrl : "/images/no image.jpg";
+    image.alt = category;
+    //width and height
+    image.height = 30;
+    image.width = 30;
+    if ("Danh mục" !== category) {
+      div.appendChild(image);
+    }
+    div.appendChild(btn);
+
     btn.textContent = category;
-    btn.addEventListener("click", () => {
+    div.addEventListener("click", () => {
       if (category == selectedCategory) {
-        filterByCategory("Tất cả");
-        activeCategoryButton.classList.remove("active");
+        filterByCategory("Danh mục");
+        if (activeCategoryButton) {
+          activeCategoryButton.classList.remove("active");
+        }
+        selectedCategory = null;
+        activeCategoryButton = null;
       } else {
         filterByCategory(category);
         if (activeCategoryButton) {
           activeCategoryButton.classList.remove("active");
         }
-        btn.classList.add("active");
-        activeCategoryButton = btn;
+        div.classList.add("active");
+        activeCategoryButton = div;
+        selectedCategory = category;
       }
-      selectedCategory = category;
     });
-    categoryButtons.appendChild(btn);
+    categoryPanel.appendChild(div);
+    if ("Danh mục" == category) {
+      div.classList.add("active");
+      activeCategoryButton = div;
+      selectedCategory = category;
+    }
   });
 }
 
 function filterByCategory(category) {
   var filtered
-  if (category === "Tất cả") {
+  if (category === "Danh mục") {
     filtered = products
   } else {
     filtered = products
@@ -177,11 +213,12 @@ function normalizeString(str) {
 }
 
 
+const productGrid = document.getElementById("productGrid");
 const backToTop = document.getElementById("backToTop");
 const addNew = document.getElementById("addNew");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
+productGrid.addEventListener("scroll", () => {
+  if (productGrid.scrollTop > 300) {
     backToTop.style.display = "block";
     addNew.style.display = "block";
   } else {
@@ -189,9 +226,8 @@ window.addEventListener("scroll", () => {
     addNew.style.display = "none";
   }
 });
-
 backToTop.addEventListener("click", () => {
-  window.scrollTo({
+  productGrid.scrollTo({
     top: 0,
     behavior: "smooth"
   });
